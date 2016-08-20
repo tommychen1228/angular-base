@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "gulp": "~3.9.1",
+    "browser-sync": "~2.14.0",
+    "bower": "~1.7.9"
+  },
+  "devDependencies": {
+    "gulp-concat": "~2.6.0",
+    "gulp-sass": "~2.3.2",
+    "gulp-clean-css": "~2.0.12",
+    "gulp-uglify": "~2.0.0",
+    "gulp-autoprefixer": "3.1.1",
+    "gulp-htmlmin": "2.0.0"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "browser-sync start --server --files \"index.html, css/*.css, js/*.js, templates/*.html\"",
+    "watch": "gulp watch",
+    "build": "gulp build"
+  }
+}
