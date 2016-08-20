@@ -18,7 +18,7 @@
   "scripts": {
     "postinstall": "bower install",
     "prestart": "npm install",
-    "start": "browser-sync start --server --files \"index.html, css/*.css, js/*.js, templates/*.html\"",
+    "start": "browser-sync start --s 'app' --f 'index.html' 'css/*.css' 'js/*.js' 'templates/*.html'",
     "watch": "gulp watch",
     "build": "gulp build"
   }

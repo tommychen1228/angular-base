@@ -45,7 +45,7 @@ gulp.task('build', ['sass', 'concat-controllers', 'concat-services', 'concat-dir
         .pipe(gulp.dest(buildPath));
 });
 
-gulp.task('watch', ['default'], function () {
+gulp.task('watch', ['sass', 'concat-controllers', 'concat-services', 'concat-directives', 'concat-filters'], function () {
 
     // AngularJS文件监听
     gulp.watch(srcPath + 'js/controllers/*.js', ['concat-controllers'], function (event) {
